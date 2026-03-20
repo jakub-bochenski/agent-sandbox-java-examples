@@ -7,4 +7,6 @@
 #   - ../../.git:/workspace/.git:ro
 services:
   agent:
+    image: !reset null
+    build: .
     volumes: []
