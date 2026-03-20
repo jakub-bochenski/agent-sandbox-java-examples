@@ -1,0 +1,18 @@
+# User-owned compose overrides applied to all CLI agents.
+# Safe to edit. agentbox will not overwrite this file.
+# Paths are resolved relative to .agent-sandbox/compose/.
+# Common examples:
+#   - ${HOME}/.config/agent-sandbox/shell.d:/home/dev/.config/agent-sandbox/shell.d:ro
+#   - ${HOME}/.config/agent-sandbox/dotfiles:/home/dev/.dotfiles:ro
+#   - ../../.git:/workspace/.git:ro
+services:
+  agent:
+    image: !reset null
+    build: .
+    volumes: 
+      - m2-cache:/home/dev/.m2
+    environment:
+      JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Daether.connector.http.useSystemProperties=true
+
+volumes:
+  m2-cache:
