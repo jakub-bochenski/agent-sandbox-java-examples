@@ -6,7 +6,7 @@ This example builds on the basic setup by adding Maven artifact caching with Doc
 
 Extends [`kotlin-junit-sample-basic`](../kotlin-junit-sample-basic/README.MD) with persistent Maven cache.
 
-### 1. Docker Volume Added
+### 1. Docker Volume Added ([1de5358](/../../commit/1de5358))
 
 Modified [`.agent-sandbox/compose/user.override.yml`](.agent-sandbox/compose/user.override.yml):
 
@@ -20,7 +20,7 @@ volumes:
   m2-cache:
 ```
 
-### 2. Dockerfile Updated
+### 2. Dockerfile Updated ([1de5358](/../../commit/1de5358))
 
 Added directory creation to [`Dockerfile`](.agent-sandbox/compose/Dockerfile):
 

@@ -17,7 +17,7 @@ Downloaded all project dependencies to a dedicated repository on the host:
 
 This creates a Maven repository containing only the dependencies required by this project, separate from the global `~/.m2/repository`.
 
-### 2. Volume Mount Updated
+### 2. Volume Mount Updated ([c129dcb](/../../commit/c129dcb))
 
 Modified [`.agent-sandbox/compose/user.override.yml`](.agent-sandbox/compose/user.override.yml):
 
@@ -77,7 +77,7 @@ agentbox compose exec -T agent sh -c 'cat > /home/dev/.m2/settings.xml' <<-'XML'
 XML
 ```
 
-### 4. Network Policy Restricted
+### 4. Network Policy Restricted ([503ef2d](/../../commit/503ef2d))
 
 Removed Maven Central from [`.agent-sandbox/policy/user.policy.yaml`](.agent-sandbox/policy/user.policy.yaml):
 

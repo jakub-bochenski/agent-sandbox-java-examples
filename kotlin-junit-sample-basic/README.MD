@@ -4,7 +4,7 @@ This example shows the result of following the basic Agent Sandbox setup for a J
 
 ## Configuration Applied
 
-### 1. Sandbox Initialization
+### 1. Sandbox Initialization ([d2fa7db](/../../commit/d2fa7db))
 
 ```bash
 agentbox init
@@ -12,7 +12,7 @@ agentbox init
 
 Selected Claude agent in CLI mode, which generated `.agent-sandbox/` containing the `docker compose` configuration and network allowlist.
 
-### 2. Java Runtime
+### 2. Java Runtime ([056b07c](/../../commit/056b07c))
 
 Created [`Dockerfile`](.agent-sandbox/compose/Dockerfile):
 
@@ -38,7 +38,7 @@ services:
     build: .
 ```
 
-### 3. Network Policy
+### 3. Network Policy ([77f0bc7](/../../commit/77f0bc7))
 
 Added Maven Central to [`.agent-sandbox/policy/user.policy.yaml`](.agent-sandbox/policy/user.policy.yaml):
 
@@ -49,7 +49,7 @@ domains:
   - repo.maven.apache.org
 ```
 
-### 4. Java Proxy Configuration
+### 4. Java Proxy Configuration ([a6d9337](/../../commit/a6d9337))
 
 Added to the agent service in [`.agent-sandbox/compose/user.override.yml`](.agent-sandbox/compose/user.override.yml):
 

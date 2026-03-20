@@ -6,7 +6,7 @@ This example builds on volume persistence by adding a read-only mount of the hos
 
 Extends [`kotlin-junit-sample-volume-persistence`](../kotlin-junit-sample-volume-persistence/README.MD) with layered caching.
 
-### 1. Host Repository Mount
+### 1. Host Repository Mount ([f5b89fe](/../../commit/f5b89fe))
 
 Modified [`.agent-sandbox/compose/user.override.yml`](.agent-sandbox/compose/user.override.yml):
 
