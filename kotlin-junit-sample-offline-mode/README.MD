@@ -1,5 +1,8 @@
 # Kotlin JUnit Sample - Offline Mode
 
+> [!NOTE]
+> While file paths are shown for demonstration purposes, it's best to use `agentbox edit` to edit files.
+
 This example demonstrates a stricter setup that prevents the agent from downloading any dependencies. Maven is forced to use only a project-scoped cache, with network access to Maven Central revoked.
 
 ## Configuration Applied

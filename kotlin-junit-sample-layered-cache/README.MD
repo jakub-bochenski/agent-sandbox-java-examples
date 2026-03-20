@@ -1,5 +1,8 @@
 # Kotlin JUnit Sample - Layered Cache
 
+> [!NOTE]
+> While file paths are shown for demonstration purposes, it's best to use `agentbox edit` to edit files.
+
 This example builds on volume persistence by adding a read-only mount of the host's Maven repository. This creates a two-tier cache: dependencies already on the host are available immediately, newly downloaded artifacts go to the container-specific volume.
 
 ## Configuration Applied

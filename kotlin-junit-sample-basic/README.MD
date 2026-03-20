@@ -1,5 +1,8 @@
 # Kotlin JUnit Sample - Basic Sandboxed Setup
 
+> [!NOTE]
+> While file paths are shown for demonstration purposes, it's best to use `agentbox edit` to edit files.
+
 This example shows the result of following the basic Agent Sandbox setup for a Java/Kotlin project.
 
 ## Configuration Applied

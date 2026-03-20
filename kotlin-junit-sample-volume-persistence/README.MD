@@ -1,5 +1,8 @@
 # Kotlin JUnit Sample - Volume Persistence
 
+> [!NOTE]
+> While file paths are shown for demonstration purposes, it's best to use `agentbox edit` to edit files.
+
 This example builds on the basic setup by adding Maven artifact caching with Docker volumes.
 
 ## Configuration Applied
