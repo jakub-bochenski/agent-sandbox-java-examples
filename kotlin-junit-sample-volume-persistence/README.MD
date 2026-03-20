@@ -8,7 +8,7 @@ Extends [`kotlin-junit-sample-basic`](../kotlin-junit-sample-basic/README.MD) wi
 
 ### 1. Docker Volume Added
 
-Modified `.agent-sandbox/compose/user.override.yml`:
+Modified [`.agent-sandbox/compose/user.override.yml`](.agent-sandbox/compose/user.override.yml):
 
 ```yaml
 agent:
@@ -22,7 +22,7 @@ volumes:
 
 ### 2. Dockerfile Updated
 
-Added directory creation to `Dockerfile`:
+Added directory creation to [`Dockerfile`](.agent-sandbox/compose/Dockerfile):
 
 ```dockerfile
 RUN mkdir -p /home/dev/.m2 # required for proper file ownership when mounting

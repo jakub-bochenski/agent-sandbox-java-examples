@@ -8,7 +8,7 @@ Extends [`kotlin-junit-sample-volume-persistence`](../kotlin-junit-sample-volume
 
 ### 1. Host Repository Mount
 
-Modified `.agent-sandbox/compose/user.override.yml`:
+Modified [`.agent-sandbox/compose/user.override.yml`](.agent-sandbox/compose/user.override.yml):
 
 ```yaml
 agent:

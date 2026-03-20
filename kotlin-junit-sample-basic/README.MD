@@ -14,7 +14,7 @@ Selected Claude agent in CLI mode, which generated `.agent-sandbox/` containing 
 
 ### 2. Java Runtime
 
-Created `Dockerfile`:
+Created [`Dockerfile`](.agent-sandbox/compose/Dockerfile):
 
 ```dockerfile
 FROM ghcr.io/mattolson/agent-sandbox-claude
@@ -29,7 +29,7 @@ RUN apt-get update && \
 USER dev
 ```
 
-Modified `.agent-sandbox/compose/user.override.yml`:
+Modified [`.agent-sandbox/compose/user.override.yml`](.agent-sandbox/compose/user.override.yml):
 
 ```yaml
 services:
@@ -40,7 +40,7 @@ services:
 
 ### 3. Network Policy
 
-Added Maven Central to `.agent-sandbox/policy/user.policy.yaml`:
+Added Maven Central to [`.agent-sandbox/policy/user.policy.yaml`](.agent-sandbox/policy/user.policy.yaml):
 
 ```yaml
 services: []
@@ -51,7 +51,7 @@ domains:
 
 ### 4. Java Proxy Configuration
 
-Added to the agent service in `.agent-sandbox/compose/user.override.yml`:
+Added to the agent service in [`.agent-sandbox/compose/user.override.yml`](.agent-sandbox/compose/user.override.yml):
 
 ```yaml
 environment:

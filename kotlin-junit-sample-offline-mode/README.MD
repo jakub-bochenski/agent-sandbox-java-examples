@@ -19,7 +19,7 @@ This creates a Maven repository containing only the dependencies required by thi
 
 ### 2. Volume Mount Updated
 
-Modified `.agent-sandbox/compose/user.override.yml`:
+Modified [`.agent-sandbox/compose/user.override.yml`](.agent-sandbox/compose/user.override.yml):
 
 ```yaml
 agent:
@@ -79,7 +79,7 @@ XML
 
 ### 4. Network Policy Restricted
 
-Removed Maven Central from `.agent-sandbox/policy/user.policy.yaml`:
+Removed Maven Central from [`.agent-sandbox/policy/user.policy.yaml`](.agent-sandbox/policy/user.policy.yaml):
 
 ```yaml
 services: []
