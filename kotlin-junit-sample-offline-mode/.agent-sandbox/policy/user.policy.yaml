@@ -6,5 +6,4 @@
 # See docs/policy/schema.md for the full format reference.
 
 services: []
-domains: 
-  - repo.maven.apache.org
+domains: []
