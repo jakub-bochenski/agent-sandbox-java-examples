@@ -9,7 +9,10 @@ services:
   agent:
     image: !reset null
     build: .
-    volumes: []
+    volumes: 
+      - m2-cache:/home/dev/.m2
     environment:
       JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Daether.connector.http.useSystemProperties=true
 
+volumes:
+  m2-cache:

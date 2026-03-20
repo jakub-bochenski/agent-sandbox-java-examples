@@ -8,3 +8,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 USER dev
+
+RUN mkdir -p /home/dev/.m2 # required for proper file ownership when mounting
