@@ -32,6 +32,10 @@ Two-tier cache setup that mounts the host's Maven repository read-only. Dependen
 
 Strictest isolation: network access to Maven Central is revoked entirely. Maven can only use a pre-populated project-scoped cache. Prevents the agent from downloading any new dependencies.
 
+### [kotlin-junit-sample-devcontainer](./kotlin-junit-sample-devcontainer/)
+
+Initial state after running `agentbox init` and selecting devcontainer mode. Shows what files are created by initialization and serves as a baseline for understanding the generated structure. Other examples are based on cli mode, but the changes shown could be applied to devcontainer mode in the same way.
+
 ## Getting Started
 
 Install Agent Sandbox following the [official documentation](https://github.com/mattolson/agent-sandbox?tab=readme-ov-file#quick-start-macos--colima).
